@@ -4,11 +4,18 @@ const Form = () => {
   return (
     <div>
       <div class="flex justify-center my-2  md:mx-0">
-        <form class="w-full max-w-xl bg-white rounded-lg shadow-md p-6">
+        <form
+          name="contact"
+          action="/contact"
+          method="post"
+          class="w-full max-w-xl bg-white rounded-lg shadow-md p-6"
+        >
+          <input type="hidden" name="form-name" value="contact" />
           <div class="flex flex-wrap -mx-3 ">
             <div class="w-full md:w-full px-3 mb-6">
               <input
                 class="appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none"
+                name="first_name"
                 type="Text"
                 required
                 placeholder="First Name"
@@ -19,6 +26,7 @@ const Form = () => {
                 class="appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none"
                 type="text"
                 required
+                name="last_name"
                 placeholder="Last Name"
               />
             </div>
@@ -26,6 +34,7 @@ const Form = () => {
               <input
                 class="appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none"
                 type="email"
+                name="email"
                 required
                 placeholder="Email Address"
               />
