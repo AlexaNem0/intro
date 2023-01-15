@@ -4,7 +4,7 @@ import Example from "./Form";
 const Right = () => {
   return (
     <div>
-      <p className="text-white bg-[#6055A5] p-3.5 rounded-lg drop-shadow-lg mb-3 ">
+      <p className="text-white bg-[#6055A5] p-3.5 rounded-lg drop-shadow-lg mb-3 text-center ">
         <span
           className="font-semibold
         "
