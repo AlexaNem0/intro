@@ -4,7 +4,7 @@ import Right from "./Right";
 
 const Main = () => {
   return (
-    <div className=" flex flex-col justify-between items-center m-auto h-screen max-w-6xl gap-4 md:flex-row  ">
+    <div className=" flex flex-col justify-evenly items-center m-auto md:h-screen max-w-6xl gap-5 lg:flex-row lg: justify-around  ">
       <Left />
       <Right />
     </div>
