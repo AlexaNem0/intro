@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import validator from "validator";
-import Icon from "../assets/images/icon-error.svg";
 
 const Form = () => {
   const [emailError, setEmailError] = useState("");
@@ -16,7 +15,7 @@ const Form = () => {
     if (validator.isEmail(email)) {
       setEmailError("");
     } else {
-      setEmailError(`Please enter valid Email ${Icon}`);
+      setEmailError(`Please enter valid Email!`);
     }
   };
 
@@ -58,7 +57,7 @@ const Form = () => {
                 placeholder="Email Address"
                 onChange={(e) => validateEmail(e)}
               />
-              <p className="pt-5">{emailError}</p>
+              <p className="">{emailError}</p>
             </div>
             <div className="w-full md:w-full px-3 mb-6">
               <input
